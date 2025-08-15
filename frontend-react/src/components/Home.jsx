@@ -4,6 +4,7 @@ import Button from "./Button";
 const Home = () => {
   return (
     <>
+  
       <div className="container mt-5">
         <div className="p-5 text-center bg-light-dark rouded">
           <h1 className="text-light">Stock Prediction Portal</h1>
@@ -17,6 +18,7 @@ const Home = () => {
           <Button text="Login" className="btn-outline-info"/>
         </div>
       </div>
+  
     </>
   );
 };
