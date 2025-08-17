@@ -4,11 +4,13 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import AuthProvider from "./context/AuthProvider";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
+    <AuthProvider>
       <Router>
       <Header/>
         <Routes>
@@ -19,6 +21,7 @@ function App() {
         </Routes>
         <Footer/>
       </Router>
+      </AuthProvider>
     </>
   );
 }
